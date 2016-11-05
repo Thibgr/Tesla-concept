@@ -1,19 +1,22 @@
 /* GENERAL */
 
 @font-face {
-    font-family: 'MyriadPro';
-    font-weight: regular;
+    font-family: 'MyriadProReg';
     src: url('link/fonts/MyriadPro-Regular.otf');
 }
 
 @font-face {
-    font-family: 'MyriadPro';
-    font-weight: bold;
+    font-family: 'MyriadProB';
     src: url('link/fonts/MyriadPro-Bold.otf');
 }
 
+@font-face {
+    font-family: 'MyriadProIt';
+    src: url('link/fonts/MyriadPro-It.otf');
+}
+
 body {
-    background-color: #60627b;
+    background-color: #62647d;
 }
 
 /* HEADER */
@@ -42,7 +45,7 @@ header ul li {
 
 header a {
     text-decoration: none; 
-    font-family: MyriadPro, sans-serif;
+    font-family: 'MyriadProReg', sans-serif;
     font-size: 26px;
     text-transform: uppercase;
     color: #adadad;
@@ -52,11 +55,16 @@ header a {
 header a:hover {
     color: white;
 }
+
+
 /* SLIDER */
+
+    
+    /* INTRO -- SLIDER */
 
 
 h1 {
-    font-family: 'MyriadPro', sans-serif;
+    font-family: 'MyriadProB', sans-serif;
     font-size: 52px;
     font-weight: bold;
     color: white; 
@@ -70,8 +78,7 @@ h1 {
 }
 
 #intro p {
-    font-family: 'MyriadPro', sans-serif;
-    font-weight: regular;
+    font-family: 'MyriadProReg', sans-serif;
     font-size: 20px;
     line-height: 30px;
     color: #cdcdcd;
@@ -80,17 +87,19 @@ h1 {
 }
 
 #intro a {
-     font-family: 'MyriadPro', sans-serif;
+     font-family: 'MyriadProB', sans-serif;
     font-size: 30px;
-    font-weight: bold;
     color: white; 
     text-decoration: none;
     text-transform: uppercase;
-    padding: 18px 44px 18px 34px;
+    padding: 18px 44px 14px 34px;
     border: 4px solid white;
     display: inline-block;
     border-radius: 5px;
 }
+
+
+    /* INTRO -- DOTS SLIDER */
 
 #dots-slide li{
     width: 16px;
@@ -114,6 +123,8 @@ h1 {
     margin-top: 230px;
 }
 
+        /* INTRO -- STATS */
+
 #description {
     clear: right;
 }
@@ -121,38 +132,130 @@ h1 {
 #slider-container {
     background: #60627b;
     background-image: url("link/hero-image.png"); /* fallback */
-    background-image: url("link/hero-image.png"), linear-gradient(#4b4d61, #62647d); /* W3C */
-    background-position: 0px 540px, 0px 0px;
-    background-repeat: no-repeat;
+    background-image: url("link/hero-image.png"), url("link/tesla-bg.png"), linear-gradient(#4b4d61, #62647d); /* W3C */
+    background-position: 0px 540px, 40px 300px, 0px 0px;
+    background-repeat: no-repeat; 
     overflow: hidden;
-    background-size: contain;
+    background-size: contain, 95%, contain;
 }
 
 
 
-#description div {
-    margin-top: 315px;
+#description>div {
+    margin-top: 360px;
     float: left;
     width: 33.2%;
-    height: 540px;
-    text-align: center;
+    height: 340px;
     color: white;
     padding-top: 240px;
+    padding-bottom: 20px;
 }
 
-#description div:last-child,
-#description div:first-child{
+#description>div span {
+    vertical-align: super;
+    font-size: 50%;
+}
+
+#description>div>div {
+    padding-left: 190px;
+}
+
+#description>div:last-child,
+#description>div:first-child{
     width: 33.4%;
 }
 
 #description h2 {
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
     font-size: 160px;
 }
 
 #description p {
-    font-family: 'MyriadPro', sans-serif;
-    font-size: 16px;
+    font-family: 'MyriadProReg', sans-serif;
+    font-size: 20px;
     text-transform: uppercase;
-    text-align: left
+    text-align: left;
+    color: #cdcdcd;
 }
+
+
+/* ZOOM INFOS */
+
+#zoom-infos div, 
+#zoom-infos img {
+    float: left;
+    width: 50%;
+    height: 480px;
+}
+
+#zoom-infos div:first-child {
+    background-color: #62647d;
+}
+
+#zoom-infos div:last-child {
+    background-color: #30313e;
+}
+
+#zoom-infos div {
+}
+
+#zoom-infos h2 {
+    font-family: 'MyriadProB', sans-serif;
+    font-size: 52px;
+    color: white;
+    padding: 115px 105px 35px 190px;
+}
+
+#zoom-infos p {
+    font-family: 'MyriadProReg', sans-serif;
+    padding-left: 190px;
+    padding-right: 105px;
+    color: #cdcdcd;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* JOIN US SECTION */  
+
+#join-us {
+    clear: both;
+    background-color: white;
+    height: 290px;
+    text-align: center;
+}
+
+#join-us a {
+    margin-top: 80px;
+    margin-bottom: 29px;
+    display: inline-block;
+    background-color: #23242e;
+    border-radius: 5px;
+    padding: 35px 115px 25px;
+    color: white;
+    font-family: 'MyriadProB', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#join-us p {
+    font-family: 'MyriadProReg', sans-serif;
+    font-size: 20px;
+    color: #62647d;
+}
+
+/* FOOTER */
+
+footer {
+    height: 120px;
+    background-color: #62647d;
+    text-align: center;
+}
+
+footer img {
+    margin-top: 35px;
+}
+
+/* LINES */
+
