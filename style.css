@@ -98,6 +98,12 @@ h1 {
     border-radius: 5px;
 }
 
+#intro img {
+    margin-top: 29px;
+    width: 38px;
+    position: absolute;
+}
+
 
     /* INTRO -- DOTS SLIDER */
 
@@ -179,11 +185,31 @@ h1 {
     color: #cdcdcd;
 }
 
+#first-dot {
+    position: absolute;
+    width: 38px;
+    left: 330px;
+    top: 890px;
+}
+
+#second-dot {
+    position: absolute;
+    width: 38px;
+    left: 1050px;
+    top: 918px;
+}
+
+#third-dot {
+    position: absolute;
+    width: 38px;
+    left: 1760px;
+    top: 885px;
+}
 
 /* ZOOM INFOS */
 
 #zoom-infos div, 
-#zoom-infos img {
+#zoom-infos>img {
     float: left;
     width: 50%;
     height: 480px;
@@ -216,6 +242,21 @@ h1 {
     font-size: 20px;
 }
 
+#fifth-dot {
+    position: absolute;
+    height: 38px;
+    top: 1595px;
+    left: 700px;
+}
+
+#sixth-dot {
+    height: 38px;
+    top: 2071px;
+    left: 1050px;
+    position: absolute;
+}
+
+
 /* JOIN US SECTION */  
 
 #join-us {
@@ -225,7 +266,7 @@ h1 {
     text-align: center;
 }
 
-#join-us a {
+#join-us button {
     margin-top: 80px;
     margin-bottom: 29px;
     display: inline-block;
@@ -237,6 +278,7 @@ h1 {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 30px;
+    border: none;
 }
 
 #join-us p {
@@ -256,6 +298,3 @@ footer {
 footer img {
     margin-top: 35px;
 }
-
-/* LINES */
-
